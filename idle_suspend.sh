@@ -29,6 +29,7 @@ do
 
             # If the system has been idle for the specified amount of time, suspend it
             if [ "$ELAPSED" -ge "$IDLE_TIME" ]; then
+                echo "Suspending system now".
                 systemctl suspend
                 IDLE_START=
             fi
@@ -43,5 +44,5 @@ do
     fi
 
     # Wait before checking again
-    sleep 1
+    sleep 60
 done
