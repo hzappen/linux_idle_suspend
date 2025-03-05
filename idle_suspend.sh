@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Configurable variables
-IDLE_TIME=10    # in seconds (5 minutes)
-CPU_LOAD_THRESHOLD=50  # in percentage
+IDLE_TIME=60    # in seconds (5 minutes)
+CPU_LOAD_THRESHOLD=5  # in percentage
 
 # Function to check for active user sessions
 check_active_sessions() {
